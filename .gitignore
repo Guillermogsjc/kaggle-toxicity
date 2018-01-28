@@ -1,0 +1,10 @@
+__pycache__/
+__pycache__/*
+.ipynb_checkpoints/
+.ipynb_checkpoints/*
+.~*
+*.h5
+/.idea/
+*.zip
+*.csv
+data/*
