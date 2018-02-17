@@ -63,6 +63,19 @@ def dist_series_to_series(main_series, sec_series , case_sens_=False):
 
     return dist_series
 
+def dist_text_to_series(main_text, sec_series , case_sens_=False):
+    
+    main_series = pd.Series(main_text.split())
+    index_ = main_series.index
+    dist_series = pd.Series(np.nan, index=index_)
+
+    for ind in index_:
+        main_str_  = main_series.loc[ind]
+        dist_series.loc[ind] = dist_string_to_series(main_str_, sec_series, case_sens_=False)
+
+    return dist_series
+
+
 
 def dist_series_to_series_paralell(main_series, sec_series, case_sens_=False):
 
