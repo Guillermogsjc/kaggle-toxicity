@@ -6,3 +6,5 @@ __pycache__/*
 *.h5
 /.idea/
 *.zip
+data/desktop.ini
+desktop.ini
