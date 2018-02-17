@@ -6,5 +6,3 @@ __pycache__/*
 *.h5
 /.idea/
 *.zip
-*.csv
-data/*
