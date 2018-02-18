@@ -33,7 +33,7 @@ def get_punctuation_prop(s):
     return val
 
 
-def process_text(text, stem_words=True, remove_stop_words=True):
+def process_text(text, stem_words=False, remove_stop_words=True):
 
     # Convert words to lower case and split them
     text = text.lower()

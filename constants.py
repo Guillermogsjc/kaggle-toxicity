@@ -3,6 +3,7 @@ import os
 
 
 DATA_FOLDER = 'data'
+DATA_TOOLS_FOLDER = 'data_tools'
 MODELS_FOLDER = 'models'
 RESULTS_FOLDER = 'results'
 

@@ -57,7 +57,7 @@ class KaggleToxicityValMetric(Callback):
         logs = logs or {}
         self.losses.append(logs.get('loss'))
 
-        Y_pred = self.model.predict(self.validation_data[0])
+        Y_pred = self.model.predict(self.validation_data[0], batch_size=512)
         n_cols = Y_pred.shape[1]
 
         roc_auc_list = []
